@@ -1,16 +1,45 @@
 <!DOCTYPE html>
-
 <html>
-
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-
+  <head>
+    <title>Accio Job Blog</title>
+    <style>
+      /* Add CSS styling here */
+      .welcome {
+        animation: scroll 20s linear infinite;
+      }
+      @keyframes scroll {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+			    }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="welcome">Welcome to Acciojobs!</h1>
+    <div>
+      <a href="https://acciojob.com/blog/" target="_blank">
+        <img src="Image_one" height="200px" alt="Blog 1" />
+        <h2>Blog 1</h2>
+        <p>Short description of Blog 1</p>
+      </a>
+      <a href="https://acciojob.com/blog/brute-force-vs-optimization/" target="_blank">
+        <img src="Image_two" height="200px" alt="Blog 2" />
+		  <h2>Blog 2</h2>
+        <p>Short description of Blog 2</p>
+      </a>
+      <a href="https://acciojob.com/blog/dsa-vs-competitive-programming/" target="_blank">
+        <img src="Image_three" height="200px" alt="Blog 3" />
+        <h2>Blog 3</h2>
+        <p>Short description of Blog 3</p>
+      </a>
+      <a href="https://acciojob.com/blog/10-tips-to-optimize-your-linkedin-profile-and-attract-recruiters/" target="_blank">
+        <img src="Image_one" height="200px" alt="Blog 4" />
+        <h2>Blog 4</h2>
+        <p>Short description of Blog 4</p>
+      </a>
+    </div>
+  </body>
 </html>
