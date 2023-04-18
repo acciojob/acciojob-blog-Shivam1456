@@ -1,45 +1,91 @@
+
+
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Accio Job Blog</title>
-    <style>
-      /* Add CSS styling here */
-      .welcome {
-        animation: scroll 20s linear infinite;
-      }
-      @keyframes scroll {
-        0% {
-          transform: translateX(100%);
-        }
-        100% {
-          transform: translateX(-100%);
-			    }
-      }
-    </style>
-  </head>
-  <body>
-    <h1 class="welcome">Welcome to Acciojobs!</h1>
-    <div>
-      <a href="https://acciojob.com/blog/" target="_blank">
-        <img src="Image_one" height="200px" alt="Blog 1" />
-        <h2>Blog 1</h2>
-        <p>Short description of Blog 1</p>
-      </a>
-      <a href="https://acciojob.com/blog/brute-force-vs-optimization/" target="_blank">
-        <img src="Image_two" height="200px" alt="Blog 2" />
-		  <h2>Blog 2</h2>
-        <p>Short description of Blog 2</p>
-      </a>
-      <a href="https://acciojob.com/blog/dsa-vs-competitive-programming/" target="_blank">
-        <img src="Image_three" height="200px" alt="Blog 3" />
-        <h2>Blog 3</h2>
-        <p>Short description of Blog 3</p>
-      </a>
-      <a href="https://acciojob.com/blog/10-tips-to-optimize-your-linkedin-profile-and-attract-recruiters/" target="_blank">
-        <img src="Image_one" height="200px" alt="Blog 4" />
-        <h2>Blog 4</h2>
-        <p>Short description of Blog 4</p>
-      </a>
-    </div>
-  </body>
+<head>
+	<title>Accio Jobs Blog</title>
+	<style>
+		.blog {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.blog-item {
+			margin: 10px;
+			text-align: center;
+			cursor: pointer;
+		}
+
+		.blog-item img {
+			height: 200px;
+		}
+
+		.blog-item h3 {
+			margin-top: 5px;
+			font-size: 1.2em;
+			font-weight: bold;
+			color: #333;
+		}
+
+		.blog-item p {
+			margin-top: 5px;
+			font-size: 0.9em;
+			color: #666;
+		}
+
+		.marquee {
+			overflow: hidden;
+			position: relative;
+			margin: 0 auto;
+			padding: 10px 0;
+			color: #fff;
+			background-color: #333;
+			font-size: 1.2em;
+			font-weight: bold;
+			text-align: center;
+		}
+
+		.marquee span {
+			position: absolute;
+			display: block;
+			width: 100%;
+			height: 100%;
+			background-color: inherit;
+			white-space: nowrap;
+			animation: marquee 10s linear infinite;
+		}
+
+		@keyframes marquee {
+			0% { transform: translateX(100%); }
+			100% { transform: translateX(-100%); }
+		}
+	</style>
+</head>
+<body>
+	<div class="marquee">
+		<span>Welcome to Acciojobs!</span>
+	</div>
+	<div class="blog">
+		<div class="blog-item" onclick="location.href='https://acciojob.com/blog/brute-force-vs-optimization/'">
+			<img src="Image_one" alt="Blog Image 1">
+			<image src="https://acciojob.com/blog/brute-force-vs-optimization/"></image>
+				
+			<h3>Brute Force vs. Optimization</h3>
+			<p>We can say that optimization is one step further than the brute-force method of problem solving…</p>
+		</div>
+		<div class="blog-item" onclick="location.href='https://acciojob.com/blog/dsa-vs-competitive-programming/'">
+			<img src="image_two" alt="Blog Image 2">
+			<h3>DSA vs. Competitive Programming</h3>
+			<p>DSA or Competitive programming? What is better for you? Questions such as these often put you in a…</p>
+		</div>
+		<div class="blog-item" onclick="location.href='https://acciojob.com/blog/10-tips-to-optimize-your-linkedin-profile-and-attract-recruiters/'">
+			<img src="image_three" alt="Blog Image 3">
+			<h3>10 Tips to Optimize Your LinkedIn Profile and Attract Recruiters</h3>
+			<p>As a job seeker, you may wonder how to make your LinkedIn profile stand out to recruiters. Your LinkedIn…</p>
+		</div>
+	</div>
+</body>
 </html>
